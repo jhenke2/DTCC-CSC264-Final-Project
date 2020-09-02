@@ -1,0 +1,65 @@
+/*
+   @author Trevor Wilkins
+*/
+
+h1 {
+   padding-top: 5em
+}
+
+#content {
+   margin: 0 auto;
+}
+
+#about-us {
+   text-align: center;
+   padding: 0 5%;
+   width: 50%;
+   min-width: 300px;
+   margin-top: 5em;
+}
+
+#log-in-button, #load-sign-up-button, #sign-up-button {
+   width: 40%;
+   min-width: 150px;
+   max-width: 200px;
+   margin: 1em;
+}
+
+#authentication-block{
+   min-width: 400px;
+   padding-bottom: 10em;
+}
+
+.login-field {
+   min-width: 50px;
+}
+
+#sign-up-block, #log-in-block {
+   margin-top: 1rem;
+   padding-top: 2rem;
+   text-align: center;
+}
+
+#log-in-block {
+   padding-top: 1rem;
+   margin-bottom: 1rem;
+}
+
+#sign-up-alert-message {
+   margin-top: 1rem;
+
+}
+
+/*
+   Breakpoint control
+*/
+@media only screen and (max-width: 1000px) {
+   #about-us{
+      width: 90%;
+      margin: 5em auto 0 auto;
+   }
+   #authentication-block{
+      width: 90%;
+      margin: 0 auto;
+   }
+ }

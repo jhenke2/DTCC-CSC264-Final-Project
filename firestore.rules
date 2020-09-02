@@ -1,0 +1,18 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+  //old rules for every gamer to access our repository
+   // match /{document=**} {
+     // allow read, write;
+    //}
+    
+    //Testing new rules
+    match /{document=**} {
+    	allow read, write: if isSignedIn();
+    }
+    
+    function isSignedIn() {
+    	return request.auth.uid != null;
+    }
+  }
+}
