@@ -1,0 +1,108 @@
+/*
+   @author Trevor Wilkins
+   @editor Justin Henke
+*/
+
+ /*
+ Styling content containers
+ */
+ #central-feed {
+    text-align: center;
+    padding: 25px 0px;
+    align-content: center;
+    width: 70%;
+    min-width: 660px;
+    max-width: 800px;
+    margin: 30px auto;
+ }
+ 
+ #top-posts{
+   margin-top: 3em;
+}
+
+ /*
+    Styling search features
+ */
+ #search-btn{
+   position: absolute;
+   transform: translate(-100%, 0%);
+   width: 50px;
+   height: 50px;
+   border: 3px solid #00a261;
+   border-left: 0px solid #00a261;
+   background-color: white;
+   text-align: center;
+   cursor: pointer;
+   font-size: 20px;
+}
+
+#search-bar {
+   width: 100%;
+   padding: 8px 12px 9px 12px;
+   font-size: 18px;
+   outline: none;
+   border: 3px solid #00a261;
+   border-right: 0px solid #00a261;
+
+}
+ #a-search-tab {
+    margin-top: -10px;
+    padding: 20px 5px 10px 5px;
+    width: 100%;
+    display: block;
+ }
+
+ #a-search-button {
+    cursor: pointer;
+    color: #00a261;
+    text-decoration: underline;
+    text-align: left;
+ }
+
+ #a-search-button:hover{
+   color: #A30041;
+ }
+
+
+
+/*
+ Styling buttons
+*/
+#create-btn, #adv-search-btn {
+   font-size: 1.5em;
+   width: 50%;
+   margin: 1em;
+}
+
+#return-btn {
+   text-align: left;
+   margin: 40px 0px 20px 0px;
+}
+
+
+
+ /*
+   Styling message at end of page loading.
+ */
+ .no-results {
+   color: #7e7e7e;
+   margin-top: 5em;
+}
+
+
+
+/*
+   Breakpoint control
+*/
+@media only screen and (max-width: 750px) {
+   #central-feed {
+      width: 90%;
+      min-width: 0px;
+   }
+ }
+
+ @media only screen and (max-width: 500px) {
+   #central-feed {
+      width: 95%;
+   }
+ }
